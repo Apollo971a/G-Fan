@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Fan - Premium Cooling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom animations for wind streamers */
+      @keyframes flutter {
+        0% { transform: rotate(0deg) translateX(0); }
+        25% { transform: rotate(5deg) translateX(2px); }
+        50% { transform: rotate(0deg) translateX(0); }
+        75% { transform: rotate(-5deg) translateX(-2px); }
+        100% { transform: rotate(0deg) translateX(0); }
+      }
+      .animate-flutter {
+        animation: flutter 0.2s infinite linear;
+      }
+      
+      @keyframes float-particle {
+        0% { transform: translateX(0) translateY(0); opacity: 0; }
+        10% { opacity: 0.5; }
+        90% { opacity: 0.5; }
+        100% { transform: translateX(100vw) translateY(20px); opacity: 0; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 text-gray-900 antialiased">
+    <div id="root"></div>
+  </body>
+</html>

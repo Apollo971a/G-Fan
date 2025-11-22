@@ -1,0 +1,5 @@
+{
+  "name": "G-Fan",
+  "description": "A realistic, interactive electric fan simulator with 4 adjustable speed settings and wind effects.",
+  "requestFramePermissions": []
+}
